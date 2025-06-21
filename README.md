@@ -56,8 +56,8 @@ This tool monitors Windows Security Event Logs for failed login attempts (Event 
 
 1. **Clone the repository:**
     ```
-    git clone https://github.com/yourusername/failed-login-attempt-monitor.git
-    cd failed-login-attempt-monitor
+    git clone https://github.com/johnbrillhart23/CYB333.git
+  
     ```
 
 2. **Set up a virtual environment (optional but recommended):**
@@ -75,7 +75,6 @@ This tool monitors Windows Security Event Logs for failed login attempts (Event 
 
 ## Configuration
 
-Edit `src/config/__init__.py` to set your preferences:
 
 - `THRESHOLD`: Number of failed attempts to trigger an alert (e.g., 3)
 - `TIME_WINDOW_MINUTES`: Time window for counting failed attempts (e.g., 5)
@@ -83,7 +82,7 @@ Edit `src/config/__init__.py` to set your preferences:
 - `monitoring_interval`: How often (in seconds) to check the logs (e.g., 60)
 - `EMAIL`: (Optional) Email alert settings
 
-Example:
+
 ```python
 config = {
     "THRESHOLD": 3,
